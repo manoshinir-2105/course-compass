@@ -1,110 +1,47 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #120006;
-  color: #f5e6c8;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* NAVBAR */
-.navbar {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 40px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #d4af37;
-}
+<div class="dashboard">
 
-.logo {
-  color: #d4af37;
-  font-weight: bold;
-}
+<div class="topbar">
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
+<h1>📚 Course Compass Dashboard</h1>
 
-.btn {
-  background: #d4af37;
-  padding: 8px 15px;
-  border-radius: 6px;
-  color: black;
-}
+<button onclick="logout()">
+Logout
+</button>
 
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: radial-gradient(circle at 30% 30%, #800020, transparent),
-              radial-gradient(circle at 70% 70%, #d4af37, transparent);
-}
+</div>
 
-.hero h1 {
-  font-size: 50px;
-  color: #d4af37;
-}
+<div class="form-card">
 
-.hero button {
-  padding: 12px 25px;
-  background: #d4af37;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-}
+<input
+type="text"
+id="title"
+placeholder="Learning Plan Title">
 
-/* SECTIONS */
-.section {
-  padding: 80px 40px;
-  text-align: center;
-}
+<textarea
+id="goal"
+placeholder="Describe your learning goal">
+</textarea>
 
-.dark {
-  background: #1a0008;
-}
+<button onclick="addPlan()">
+Create Learning Plan
+</button>
 
-/* GRID CARDS */
-.grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
+</div>
 
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 12px;
-  width: 220px;
-  border: 1px solid #d4af37;
-  transition: 0.3s;
-}
+<div id="plans"></div>
 
-.card:hover {
-  transform: translateY(-10px);
-}
+</div>
 
-.highlight {
-  border: 2px solid #d4af37;
-  box-shadow: 0 0 20px #d4af37;
-}
+<script src="dashboard.js"></script>
 
-/* ABOUT */
-.about {
-  padding: 80px 40px;
-  text-align: center;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #d4af37;
-}
+</body>
+</html>

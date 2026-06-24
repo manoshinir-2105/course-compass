@@ -1,120 +1,205 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #0b0005;
-  color: #f5e6c8;
-  overflow-x: hidden;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
 }
 
-/* NAV */
-.nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 40px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #d4af37;
-  z-index: 10;
+body{
+background:#0f172a;
+color:white;
+min-height:100vh;
 }
 
-.logo {
-  color: #d4af37;
-  font-weight: bold;
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
 }
 
-.links a {
-  color: white;
-  margin: 0 12px;
-  text-decoration: none;
+.logo{
+font-size:24px;
+font-weight:bold;
 }
 
-.btn {
-  background: #d4af37;
-  padding: 8px 14px;
-  border-radius: 6px;
-  color: black;
+.nav-btn{
+text-decoration:none;
+background:#22c55e;
+padding:10px 20px;
+border-radius:10px;
+color:white;
 }
 
 /* HERO */
-.hero {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
-/* 3D CANVAS */
-#bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
 }
 
-/* HERO TEXT */
-.hero-content {
-  max-width: 700px;
+.hero p{
+font-size:20px;
+max-width:700px;
+margin-bottom:30px;
+color:#cbd5e1;
 }
 
-.hero h1 {
-  font-size: 48px;
-  color: #d4af37;
+.hero-btn{
+background:#22c55e;
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+color:white;
+font-size:18px;
 }
 
-.hero button {
-  padding: 12px 25px;
-  background: linear-gradient(45deg,#d4af37,#ffdd88);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+/* AUTH */
+
+.auth-body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
 
-/* SECTIONS */
-.section, .about {
-  padding: 90px 40px;
-  text-align: center;
+.auth-card{
+width:400px;
+background:#1e293b;
+padding:35px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.4);
 }
 
-.dark {
-  background: #1a0008;
+.auth-card h1{
+margin-bottom:20px;
 }
 
-/* GRID */
-.grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+.auth-card input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
 }
 
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  width: 220px;
-  border-radius: 12px;
-  border: 1px solid #d4af37;
-  transition: 0.3s;
+.auth-card button{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#22c55e;
+border:none;
+border-radius:10px;
+color:white;
+font-weight:bold;
+cursor:pointer;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px #d4af37;
+/* DASHBOARD */
+
+.dashboard{
+max-width:1000px;
+margin:auto;
+padding:40px;
 }
 
-.highlight {
-  border: 2px solid #d4af37;
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #d4af37;
+.topbar button{
+padding:12px 20px;
+background:#ef4444;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.form-card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+margin-bottom:30px;
+}
+
+.form-card input,
+.form-card textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+.form-card textarea{
+height:120px;
+resize:none;
+}
+
+.form-card button{
+padding:12px 20px;
+background:#22c55e;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.plan-card{
+background:#1e293b;
+padding:20px;
+border-radius:20px;
+margin-bottom:20px;
+transition:.3s;
+}
+
+.plan-card:hover{
+transform:translateY(-5px);
+}
+
+.plan-card h2{
+margin-bottom:10px;
+}
+
+.plan-card p{
+color:#cbd5e1;
+margin-bottom:15px;
+}
+
+.actions{
+display:flex;
+gap:10px;
+}
+
+.actions button{
+padding:10px 16px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.actions button:first-child{
+background:#3b82f6;
+color:white;
+}
+
+.actions button:last-child{
+background:#ef4444;
+color:white;
 }

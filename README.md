@@ -1,28 +1,26 @@
-# Course Compass
+# Course Compass AI
 
-## Description
-Course Compass is a simple web app for course discovery and learning management.
+Course Compass AI is a learning planner platform that helps users create and manage personalized learning roadmaps.
 
-## What it does
-- Helps users find courses
-- Shows course details
-- Tracks learning progress
+## Features
 
-## Core Screens
+- User Authentication
+- Protected Dashboard
+- Learning Plan CRUD
+- Local Storage Persistence
+- Responsive UI
+- Vercel Deployment Ready
 
-### Home Screen
-Shows available courses.
+## CRUD Operations
 
-### Course Details Screen
-Shows lessons and course information.
+- Create Learning Plan
+- Read Learning Plans
+- Update Learning Plans
+- Delete Learning Plans
 
-### Dashboard
-Shows user progress.
+## Technologies
 
-## Tech Stack
 - HTML
 - CSS
 - JavaScript
-
-## Status
-Day 1 foundation completed.
+- LocalStorage
